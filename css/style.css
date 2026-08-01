@@ -268,3 +268,42 @@ nav a:hover{
     margin:auto; /* Centraliza o parágrafo horizontalmente */
     color:var(--cinza);
 }
+
+
+/*---------------   SOBRE   ----------------- */
+
+#sobre{
+    background:white;
+}
+
+.sobre-conteudo{
+    display:grid;
+    grid-template-columns:1fr 1fr; /* Define duas colunas de tamanho igual */
+    gap:60px;
+    align-items:center;
+}
+
+.sobre-conteudo figure{
+    overflow:hidden; /* Garante que a imagem não ultrapasse os limites do elemento */
+    border-radius:12px;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+.sobre-conteudo img{
+    width:100%; /* Garante que a imagem ocupe toda a largura do elemento pai, que é a figure*/
+}
+
+.sobre-texto h3{
+    font-size:2rem;
+    color:var(--vermelho);
+    margin-bottom:20px;
+}
+
+.sobre-texto p{
+    margin-bottom:25px;
+}
+
+.sobre-texto li{
+    margin-bottom:12px;
+    font-weight:600;
+}
