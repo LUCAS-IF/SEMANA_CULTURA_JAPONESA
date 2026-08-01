@@ -449,5 +449,70 @@ video{
     max-width:950px;
     border-radius:15px;
     box-shadow:0 15px 35px rgba(0,0,0,.20);
+}
 
+/*-------------------   INGRESSOS   -------------------*/
+
+#ingressos{
+    background:var(--cinza-claro);
+}
+
+.ingressos-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+    margin-bottom:60px;
+
+}
+
+.card-ingresso{
+    background:white;
+    border-radius:15px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    transition:.35s;
+}
+
+.card-ingresso:hover{
+    transform:translateY(-10px);
+}
+
+.card-ingresso h3{
+    color:var(--vermelho);
+    margin-bottom:20px;
+}
+
+.preco{
+    display:block; /* Permite que o elemento ocupe toda a largura disponível */
+    font-size:2rem;
+    color:var(--dourado);
+    font-weight:bold;
+    margin-bottom:25px;
+}
+
+.card-ingresso ul{
+    text-align:left;
+    margin-bottom:30px;
+}
+
+.card-ingresso li{
+    margin-bottom:12px;
+    color:var(--cinza);
+}
+
+.btn-ingressos{
+    width:100%;
+    padding:14px;
+    border:none;
+    background:var(--vermelho);
+    color:white;
+    border-radius:8px;
+    font-size:1rem;
+    cursor:pointer;
+    transition:.35s;
+}
+
+.card-ingresso button:hover{
+    background:var(--vermelho-escuro);
 }
