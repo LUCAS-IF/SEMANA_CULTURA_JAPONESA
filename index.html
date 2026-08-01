@@ -3,23 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- a largura da página acompanha a largura da tela dos diferentes dispositivos  -->
+    <!-- SEO, ajuda na busca pelo google, por exemplo-->
     <meta name="description"
         content="Site oficial da Semana da Cultura Japonesa. Evento com gastronomia, oficinas, apresentações culturais e experiências da cultura japonesa.">
-    <meta name="keywords"
-        content="Japão, Cultura Japonesa, Gastronomia, Sushi, Evento, Festival, Cultura Oriental">
-    <meta name="author" content="Seu Nome">
+    <meta name="keywords" content="Japão, Cultura Japonesa, Gastronomia, Sushi, Evento, Festival, Cultura Oriental">
+    <meta name="author" content="Lucas Souza">
 
     <title>Semana da Cultura Japonesa</title>
 
-    <!-- Favicon -->
     <link rel="icon" href="img/favicon.ico">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&family=Noto+Sans:wght@300;400;500;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&family=Noto+Sans:wght@300;400;500;700&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
@@ -32,9 +31,8 @@
 
         <div class="container">
 
-            <a href="#inicio" class="logo">
-                <img src="img/logo_japones.png"
-                    alt="Logo da Semana da Cultura Japonesa">
+            <a href="#hero" class="logo">
+                <img src="img/logo_japones.png" alt="Logo da Semana da Cultura Japonesa">
 
                 <div class="logo-texto">
                     <h1>Semana da Cultura Japonesa</h1>
@@ -42,69 +40,114 @@
                 </div>
             </a>
 
-            <nav>
+            <nav aria-label="Menu principal"> <!-- É um conjunto de atributos que tornam um site mais acessível, sabe que esta na navegação do menu principal-->
                 <ul>
-                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#hero">Início</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#programacao">Programação</a></li>
                     <li><a href="#cardapio">Cardápio</a></li>
                     <li><a href="#galeria">Galeria</a></li>
                     <li><a href="#video">Vídeo</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#informacoes">Contato</a></li>
                 </ul>
             </nav>
 
-            <a href="#ingressos" class="btn-inscricao">Inscreva-se</a>
-            
+            <a href="#ingressos" class="btn btn-primary">Inscreva-se</a>
+
         </div>
 
     </header>
 
     <main>
 
-        <section id="hero">
+        <section id="hero" class="secao">
 
             <div class="container">
 
-                <div class="hero-conteudo">
+                <div class="hero">
 
-                    <p class="hero-subtitulo">
-                        Festival Cultural • Gastronomia • Oficinas • Apresentações
-                    </p>
+                    <div class="hero-conteudo">
 
-                    <h2>
-                        Semana da Cultura Japonesa
-                    </h2>
+                        <p class="hero-subtitulo">
+                            Festival Cultural • Gastronomia • Oficinas • Apresentações
+                        </p>
 
-                    <p class="hero-descricao">
-                        Viva uma experiência única com a cultura japonesa. Descubra sabores tradicionais,
-                        apresentações culturais, oficinas, exposições e muito mais em um evento pensado
-                        para toda a família.
-                    </p>
+                        <h2>
+                            Semana da Cultura Japonesa
+                        </h2>
 
-                    <div class="hero-informacoes">
+                        <p class="hero-descricao">
+                            Viva uma experiência única com a cultura japonesa. Descubra sabores tradicionais,
+                            apresentações culturais, oficinas, exposições e muito mais em um evento pensado
+                            para toda a família.
+                        </p>
 
-                        <div class="info-item">
-                            <span>📅</span>
-                            <p>15 a 17 de Agosto de 2026</p>
+                        <div class="hero-informacoes">
+
+                            <div class="info-item">
+                                <span>📅</span>
+                                <p>15 a 17 de Agosto de 2026</p>
+                            </div>
+
+                            <div class="info-item">
+                                <span>📍</span>
+                                <p>Centro de Eventos da Cidade</p>
+                            </div>
+
                         </div>
 
-                        <div class="info-item">
-                            <span>📍</span>
-                            <p>Centro de Eventos da Cidade</p>
+                        <div class="hero-botoes">
+
+                            <a href="#sobre" class="btn btn-secondary">
+                                Saiba mais
+                            </a>
+
+                            <a href="#ingressos" class="btn btn-primary">
+                                Garanta seu ingresso
+                            </a>
+
                         </div>
 
                     </div>
+                </div>
+            </div>
 
-                    <div class="hero-botoes">
+        </section>
 
-                        <a href="#sobre" class="btn-principal">
-                            Saiba mais
-                        </a>
+        <section id="sobre" class="secao">
 
-                        <a href="#ingressos" class="btn-secundario">
-                            Garanta seu ingresso
-                        </a>
+            <div class="container">
+
+                <div class="titulo-secao">
+                    <h2>Sobre o Evento</h2>
+                    <p>Conheça a tradição, a gastronomia e a cultura japonesa em um evento pensado para todas as idades.
+                    </p>
+                </div>
+
+                <div class="sobre-conteudo">
+
+                    <figure>
+                        <img src="img/banner.png" alt="Ambiente da Semana da Cultura Japonesa">
+                        <figcaption>
+                            Ambiente inspirado na cultura japonesa.
+                        </figcaption>
+                    </figure>
+
+                    <div class="sobre-texto">
+
+                        <h3>Uma experiência cultural completa</h3>
+                        <p>
+                            A Semana da Cultura Japonesa é um evento dedicado à valorização das tradições,
+                            da gastronomia, das artes e dos costumes japoneses. Durante três dias, visitantes
+                            poderão participar de oficinas, apresentações culturais, degustações e atividades
+                            interativas voltadas para toda a família.
+                        </p>
+                        <ul>
+                            <li>✔ Gastronomia tradicional</li>
+                            <li>✔ Oficinas culturais</li>
+                            <li>✔ Exposições</li>
+                            <li>✔ Apresentações artísticas</li>
+                        </ul>
 
                     </div>
 
@@ -114,43 +157,205 @@
 
         </section>
 
-        <section id="sobre">
-            
+        <section id="programacao" class="secao">
+
             <div class="container">
-                
+
+                <div class="titulo-secao">
+                    <h2>Programação</h2>
+                    <p>Confira as principais atrações do evento.</p>
+                </div>
+
+                <div class="programacao-grid">
+
+                    <article class="programa-card">
+
+                        <span class="horario">09:00</span>
+                        <h3>Abertura Oficial</h3>
+                        <p>Cerimônia de abertura com apresentação de tambores japoneses.</p>
+
+                    </article>
+
+                    <article class="programa-card">
+
+                        <span class="horario">10:30</span>
+                        <h3>Oficina de Origami</h3>
+                        <p>Aprenda as técnicas tradicionais da dobradura japonesa com instrutores especializados.</p>
+
+                    </article>
+
+                    <article class="programa-card">
+
+                        <span class="horario">12:00</span>
+                        <h3>Praça Gastronômica</h3>
+                        <p>Degustação de pratos típicos preparados por restaurantes parceiros do evento.</p>
+
+                    </article>
+
+                    <article class="programa-card">
+
+                        <span class="horario">14:00</span>
+                        <h3>Workshop de Sushi</h3>
+                        <p>Descubra como preparar sushi utilizando ingredientes e técnicas tradicionais.</p>
+
+                    </article>
+
+                    <article class="programa-card">
+
+                        <span class="horario">16:00</span>
+                        <h3>Apresentação de Taikô</h3>
+                        <p>Espetáculo musical com tambores japoneses e apresentações culturais.</p>
+
+                    </article>
+
+                    <article class="programa-card">
+
+                        <span class="horario">19:00</span>
+                        <h3>Encerramento Cultural</h3>
+                        <p>Show de música tradicional e homenagem à cultura japonesa.</p>
+
+                    </article>
+
+                </div>
+
             </div>
 
         </section>
 
-        <section id="programacao">
+        <section id="cardapio" class="secao">
 
             <div class="container">
-                
-             </div>
+
+                <div class="titulo-secao">
+
+                    <h2>Cardápio</h2>
+                    <p>Conheça alguns pratos tradicionais que estarão disponíveis durante o evento.</p>
+
+                </div>
+
+                <div class="cardapio-grid">
+
+                    <article class="card-prato">
+
+                        <img src="img/sushi.jpg" alt="Sushi">
+                        <h3>Sushi</h3>
+                        <p>Combinação de arroz temperado com peixes e ingredientes frescos.</p>
+
+                    </article>
+
+                    <article class="card-prato">
+
+                        <img src="img/ramen.png" alt="Ramen">
+                        <h3>Ramen</h3>
+                        <p>Caldo aromático servido com macarrão, carne suína, ovo e vegetais.</p>
+
+                    </article>
+
+                    <article class="card-prato">
+
+                        <img src="img/yakissoba.jpg" alt="Yakissoba">
+                        <h3>Yakissoba</h3>
+                        <p>Macarrão salteado com legumes frescos e molho especial.</p>
+
+                    </article>
+
+                    <article class="card-prato">
+
+                        <img src="img/tempura.jpg" alt="Tempurá">
+                        <h3>Tempurá</h3>
+                        <p>Legumes e camarões empanados em massa leve e crocante.</p>
+
+                    </article>
+
+                    <article class="card-prato">
+
+                        <img src="img/onigiri.png" alt="Onigiri">
+                        <h3>Onigiri</h3>
+                        <p>Bolinho de arroz recheado e envolto por alga nori.</p>
+
+                    </article>
+
+                    <article class="card-prato">
+
+                        <img src="img/mochi.png" alt="Mochi">
+                        <h3>Mochi</h3>
+                        <p>Doce japonês preparado com massa de arroz e recheios variados.</p>
+
+                    </article>
+                </div>
+            </div>
 
         </section>
 
-        <section id="cardapio">
+        <section id="galeria" class="secao">
 
             <div class="container">
-                
-             </div>
+
+                <div class="titulo-secao">
+
+                    <h2>Galeria</h2>
+                    <p>Confira alguns momentos e atrações da Semana da Cultura Japonesa.</p>
+
+                </div>
+
+                <div class="carrossel">
+
+                    <figure>
+                        <img src="img/sushi.jpg" alt="Prato de sushi">
+                        <figcaption>Sushi tradicional</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="img/ramen.png" alt="Tigela de ramen">
+                        <figcaption>Ramen</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="img/tempura.jpg" alt="Tempurá">
+                        <figcaption>Tempurá</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="img/yakissoba.jpg" alt="Yakissoba">
+                        <figcaption>Yakissoba</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="img/onigiri.png" alt="Onigiri">
+                        <figcaption>Onigiri</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="img/mochi.png" alt="Mochi">
+                        <figcaption>Mochi</figcaption>
+                    </figure>
+
+                </div>
+
+            </div>
 
         </section>
 
-        <section id="galeria">
+        <section id="video" class="secao">
 
             <div class="container">
-                
-             </div>
 
-        </section>
+                <div class="titulo-secao">
 
-        <section id="video">
+                    <h2>Vídeo</h2>
+                    <p> Assista a um vídeo sobre a cultura japonesa e inspire-se para participar do evento.</p>
 
-            <div class="container">
-                
-             </div>
+                </div>
+
+                <video controls poster="img/banner.png"> <!-- O atributo controls adiciona controles de reprodução, pausa e volume ao vídeo. O atributo poster define uma imagem que será exibida antes do vídeo ser reproduzido. -->
+
+                    <source src="video/apresentacao.mp4" type="video/mp4"> 
+
+                    Seu navegador não suporta vídeos em HTML5. <!-- Mensagem exibida caso o navegador não suporte a tag <video> -->
+                    
+                </video>
+
+            </div>
 
         </section>
 
@@ -158,33 +363,151 @@
 
     <footer id="contato">
 
-        <section id="ingressos">
+        <section id="ingressos" class="secao">
 
             <div class="container">
-                
-             </div>
+
+                <div class="titulo-secao">
+
+                    <h2>Ingressos</h2>
+                    <p>Garanta sua participação na Semana da Cultura Japonesa.</p>
+
+                </div>
+
+                <div class="ingressos-grid">
+
+                    <article class="card-ingresso">
+
+                        <h3>Entrada Geral</h3>
+                        <span class="preco">Gratuito</span>
+
+                        <ul>
+                            <li>✔ Acesso ao evento</li>
+                            <li>✔ Praça gastronômica</li>
+                            <li>✔ Exposições culturais</li>
+                        </ul>
+
+                        <a href="#formulario" class="btn btn-primary">Selecionar</a>
+
+                    </article>
+
+                    <article class="card-ingresso">
+
+                        <h3>Workshop</h3>
+                        <span class="preco">R$ 35,00</span>
+
+                        <ul>
+                            <li>✔ Entrada Geral</li>
+                            <li>✔ Oficina de Origami</li>
+                            <li>✔ Workshop de Sushi</li>
+                        </ul>
+
+                        <a href="#formulario" class="btn btn-primary">Selecionar</a>
+
+                    </article>
+
+                    <article class="card-ingresso">
+
+                        <h3>Experiência VIP</h3>
+                        <span class="preco">R$ 80,00</span>
+                        <ul>
+                            <li>✔ Acesso completo</li>
+                            <li>✔ Área exclusiva</li>
+                            <li>✔ Brinde oficial</li>
+                        </ul>
+                        <a href="#formulario" class="btn btn-primary">Selecionar</a>
+
+                    </article>
+
+                </div>
+
+                <form id="formulario" class="formulario">
+
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone">
+
+                    <label for="ingresso">Tipo de ingresso</label>
+
+                    <select id="ingresso" name="ingresso">
+
+                        <option>Entrada Geral</option>
+                        <option>Oficina de Sushi</option>
+                        <option>Experiência Completa</option>
+
+                    </select>
+
+                    <label for="quantidade">Quantidade</label>
+
+                    <input type="number" id="quantidade" min="1" max="10">
+
+                    <label for="mensagem">Observações</label>
+
+                    <textarea id="mensagem" rows="5"></textarea>
+
+                    <button type="submit">Reservar ingresso</button>
+                </form>
+
+            </div>
 
         </section>
 
-        <section id="local">
-            
+        <section id="local" class="secao">
+
             <div class="container">
-                
-             </div>
+
+                <div class="titulo-secao">
+                    <h2>Local</h2>
+                </div>
+
+                <p>Centro de Eventos da Cidade</p>
+                <p>Av. Campos das Oliveiras, 1000 - Centro</p>
+                <p>15 a 17 de Agosto de 2026</p>
+
+                <div class="mapa">
+
+                    <!-- iframe do Google Maps -->
+                     <iframe
+                        src="https://www.google.com/maps/embed?pb=..."
+                        width="600"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                </div>
+
+            </div>
 
         </section>
 
-        <section class="informacoes">
+        <section id="informacoes" class="informacoes secao">
 
             <div class="container">
-                
-             </div>
+
+                <h2>Informações</h2>
+                <p>Telefone: (11)90985-3954</p>
+                <p>Email: contato@semanaculturajaponesa.com.br</p>
+                <p>Instagram: @semanaculturajaponesa</p>
+                <p>Facebook: Semana da Cultura Japonesa</p>
+
+            </div>
 
         </section>
 
         <div class="rodape-final">
 
             <div class="container">
+
+                <p>© 2026 Semana da Cultura Japonesa. Todos os direitos reservados.</p>
+                <p>Desenvolvido por Lucas Souza.</p>
 
             </div>
 

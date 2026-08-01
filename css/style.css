@@ -1,0 +1,102 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui o padding e a borda no tamanho total do elemento */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    color: #333;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+/* VARIÁVEIS */
+
+:root {
+    --vermelho: #c62828;
+    --vermelho-escuro: #9d1b1b;
+    --preto: #222222;
+    --cinza: #666666;
+    --cinza-claro: #f5f5f5;
+    --branco: #ffffff;
+    --dourado: #d4af37;
+}
+
+/* CONTAINER */
+
+.container {
+    width: min(90%, 1200px);
+    margin: 0 auto;
+}
+
+/* SEÇÕES */
+
+.secao {
+    padding: 80px 0;
+}
+
+/* IMAGENS */
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* LINKS */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* LISTAS */
+
+ul {
+    list-style: none;
+}
+
+/* TÍTULOS */
+
+h1, h2, h3 {
+    font-family: "Kaisei Decol", serif;
+}
+
+/* BOTÕES */
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--vermelho);
+    color: var(--branco);
+}
+
+.btn-primary:hover {
+    background: var(--vermelho-escuro);
+}
+
+.btn-secondary {
+    border: 2px solid var(--vermelho);
+    color: var(--vermelho);
+}
+
+.btn-secondary:hover {
+    background: var(--vermelho);
+    color: var(--branco);
+}
+
+
