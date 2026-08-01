@@ -155,3 +155,116 @@ nav a{
 nav a:hover{
     color:var(--vermelho);
 }
+
+/*-------------------   HERO   -------------------*/
+
+#hero{
+    background-image:
+        linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+        url("../img/banner.png"); /* Adiciona uma imagem de fundo com um gradiente escuro sobre ela */
+    background-size:cover; /* Garante que a imagem de fundo cubra todo o elemento */
+    background-position:center; /* Centraliza a imagem de fundo */
+    min-height:90vh; /* Define a altura mínima do elemento como 90% da altura da janela de visualização */
+    display:flex;
+    align-items:center;
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+    min-height:90vh;
+}
+
+.hero-conteudo{
+    max-width:700px;
+    color:white;
+}
+
+.hero-subtitulo{
+    color:var(--dourado);
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-size:.95rem; 
+    margin-bottom:20px;
+}
+
+.hero h2{
+    font-size:4rem;
+    line-height:1.1; 
+    margin-bottom:25px;
+}
+
+.hero-descricao{
+    font-size:1.15rem;
+    margin-bottom:35px;
+}
+
+.hero-informacoes{
+    display:flex;
+    gap:40px; /* Espaço entre os itens de informação */
+    margin-bottom:40px;
+}
+
+.info-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:600;
+}
+
+.info-item span{
+    font-size:1.5rem;
+}
+
+.hero-botoes{
+    display:flex;
+    gap:20px;
+}
+
+/* BOTÕES */
+
+.btn{
+    padding:15px 32px;
+    border-radius:8px;
+    font-weight:700;
+    transition:.35s;
+}
+
+.btn-primary{
+    background:var(--vermelho);
+    color:white;
+}
+
+.btn-primary:hover{
+    background:var(--vermelho-escuro);
+    transform:translateY(-3px);
+}
+
+.btn-secondary{
+    border:2px solid white;
+    color:white;
+}
+
+.btn-secondary:hover{
+    background:white;
+    color:var(--vermelho);
+}
+
+/*-------------------   TÍTULOS DAS SEÇÕES   --------------------*/
+
+.titulo-secao{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.titulo-secao h2{
+    font-size:2.6rem;
+    color:var(--vermelho);
+    margin-bottom:15px;
+}
+
+.titulo-secao p{
+    max-width:700px;
+    margin:auto; /* Centraliza o parágrafo horizontalmente */
+    color:var(--cinza);
+}
