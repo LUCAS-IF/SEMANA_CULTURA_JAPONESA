@@ -645,3 +645,55 @@ video{
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
+
+
+/*-------------------   RODAPÉ   -------------------*/
+
+.rodape-final{
+    background:#1d1d1d;
+    color:white;
+    padding:30px 0;
+}
+
+.rodape-final .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.rodape-final p{
+    font-size:.95rem;
+}
+
+
+/*-------------------   ANIMAÇÕES   -------------------*/
+
+.card-prato,
+.card-ingresso,
+.programa-card,
+.carrossel figure{
+    transition:.35s ease;
+}
+
+.card-prato:hover,
+.card-ingresso:hover,
+.programa-card:hover,
+.carrossel figure:hover{
+    transform:translateY(-8px);
+}
+
+.btn{
+    transition:.3s ease;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+input,
+select,
+textarea{
+    transition:.3s;
+}
