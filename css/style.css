@@ -116,6 +116,7 @@ header .container{
     justify-content:space-between;
     align-items:center;
     height:90px;
+    width: 95%;
 }
 
 /* LOGO */
@@ -595,4 +596,52 @@ video{
     border-radius:12px;
     box-shadow:0 10px 30px rgba(0,0,0,.12);
     margin-top: 30px;
+}
+
+/*-------------------   INFORMAÇÕES   -------------------*/
+
+.informacoes{
+    background:var(--cinza-claro);
+}
+
+.informacoes .container{
+    text-align:center;
+}
+
+.informacoes-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.info-card{
+    background:var(--branco);
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.info-card:hover{
+    transform:translateY(-5px);
+}
+
+.icone{
+    width:45px;
+    height:45px;
+    margin-bottom:15px;
+}
+
+.info-card h3{
+    color:var(--vermelho);
+    margin-bottom:10px;
+    font-size:1.2rem;
+}
+
+.info-card p{
+    color:var(--cinza);
+    line-height:1.6;
+    font-weight:500;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
