@@ -343,10 +343,48 @@ nav a:hover{
     font-weight:bold;
 }
 
-.programa-card h4{
+.programa-card h4, .dia-programacao{
     margin-bottom:15px;
 }
 
-.dia-programacao{
-    margin-bottom: 15px;
+/*-------------   CARDÁPIO   -------------*/
+
+#cardapio{
+    background: #ffffff;
+}
+
+.cardapio-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 35px;
+}
+
+.card-prato{
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden; /* Garante que o conteúdo do card não ultrapasse os limites do elemento */
+    box-shadow: 0 10px 25px rgba(0,0,0,.10);
+    transition: .35s;
+}
+
+.card-prato:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 18px 40px rgba(0,0,0,.18);
+}
+
+.card-prato img{
+    width:100%;
+    height:220px;
+    object-fit:cover; /* Garante que a imagem preencha o espaço definido, cortando partes se necessário */
+}
+
+.card-prato h3{
+    color:var(--vermelho);
+    font-size:1.5rem;
+    margin:20px 20px 10px;
+}
+
+.card-prato p{
+    margin:0 20px 25px;
+    color:var(--cinza);
 }
