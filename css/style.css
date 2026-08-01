@@ -389,10 +389,7 @@ nav a:hover{
     color:var(--cinza);
 }
 
-
-/* ==========================================
-   GALERIA
-========================================== */
+/*-------------   GALERIA   --------------*/
 
 #galeria{
     background: var(--cinza-claro);
@@ -438,4 +435,19 @@ nav a:hover{
     padding:18px;
     text-align:center;
     font-weight:bold;
+}
+
+/*-------------------   VÍDEO   -------------------*/
+
+#video{
+    background:white;
+    text-align:center; /* Centraliza o conteúdo do vídeo horizontalmente */
+}
+
+video{
+    width:100%;
+    max-width:950px;
+    border-radius:15px;
+    box-shadow:0 15px 35px rgba(0,0,0,.20);
+
 }
