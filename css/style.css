@@ -462,7 +462,6 @@ video{
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:35px;
     margin-bottom:60px;
-
 }
 
 .card-ingresso{
@@ -514,5 +513,61 @@ video{
 }
 
 .card-ingresso button:hover{
+    background:var(--vermelho-escuro);
+}
+
+/*-------------------   FORMULÁRIO   -------------------*/
+
+.formulario{
+    background:white;
+    padding:45px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+}
+
+.formulario label{
+    display:block;
+    margin-top:18px;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:1rem;
+    transition:.3s;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus{
+    border-color:var(--vermelho);
+    outline:none;
+    box-shadow:0 0 8px rgba(198,40,40,.25);
+}
+
+.formulario textarea{
+    resize:vertical;
+}
+
+.formulario button{
+    margin-top:30px;
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:8px;
+    background:var(--vermelho);
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+    transition:.35s;
+}
+
+.formulario button:hover{
     background:var(--vermelho-escuro);
 }
