@@ -7,19 +7,19 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* permite a navegação suave até os elementos */
 }
 
 body {
     font-family: "Noto Sans", sans-serif;
     color: #333;
     background: #ffffff;
-    line-height: 1.6;
+    line-height: 1.6; /* espaçamento entre linhas */
 }
 
 /* VARIÁVEIS */
 
-:root {
+:root { /* Usado para definir variáveis CSS, para achar e mudar as cores do site facilmente */
     --vermelho: #c62828;
     --vermelho-escuro: #9d1b1b;
     --preto: #222222;
@@ -32,8 +32,8 @@ body {
 /* CONTAINER */
 
 .container {
-    width: min(90%, 1200px);
-    margin: 0 auto;
+    width: min(90%, 1200px); /* Define a largura máxima do container */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
 }
 
 /* SEÇÕES */
@@ -45,8 +45,8 @@ body {
 /* IMAGENS */
 
 img {
-    display: block;
-    max-width: 100%;
+    display: block; /* Remove o espaço embaixo da imagem */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do container */
     height: auto;
 }
 
@@ -54,7 +54,7 @@ img {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: inherit; /* Garante que o link herde a cor do elemento pai */
 }
 
 /* LISTAS */
@@ -69,10 +69,10 @@ h1, h2, h3 {
     font-family: "Kaisei Decol", serif;
 }
 
-/* BOTÕES */
+/* BOTÕES: BASE PARA TODOS OS BOTÕES */
 
 .btn {
-    display: inline-block;
+    display: inline-block; /* Permite que o botão tenha largura e altura */
     padding: 14px 28px;
     border-radius: 8px;
     font-weight: 600;
@@ -99,4 +99,59 @@ h1, h2, h3 {
     color: var(--branco);
 }
 
+/*-------------------   HEADER   -------------------*/
 
+header {
+    width: 100%; 
+    background: rgba(255,255,255,0.95); 
+    backdrop-filter: blur(8px); /* Adiciona um efeito de desfoque ao fundo do header */
+    position: sticky; /* Mantém o header fixo no topo da página ao rolar */
+    top: 0; /* Define a posição do header no topo da página */
+    z-index: 999; /* Define a ordem de sobreposição do header */
+    box-shadow: 0 2px 12px rgba(0,0,0,.08);
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:90px;
+}
+
+/* LOGO */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px; /* Espaço entre a imagem e o texto da logo */
+}
+
+.logo img{
+    width:70px; 
+}
+
+.logo-texto h1{
+    font-size:1.4rem;
+    color:var(--vermelho);
+}
+
+.logo-texto span{
+    color:var(--cinza);
+    font-size:.9rem;
+}
+
+/* MENU */
+
+nav ul{
+    display:flex;
+    gap:30px; 
+}
+
+nav a{
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:var(--vermelho);
+}
