@@ -307,3 +307,46 @@ nav a:hover{
     margin-bottom:12px;
     font-weight:600;
 }
+
+/*---------------   PROGRAMAÇÃO   ----------------*/
+
+#programacao{
+    background:var(--cinza-claro);
+}
+
+.programacao-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); /* Cria colunas que se ajustam automaticamente ao tamanho da tela, com largura mínima de 280px e máxima de 1fr (uma fração do espaço disponível) */
+    gap:30px;
+    margin-bottom:40px;
+}
+
+.programa-card{
+    background:white;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.programa-card:hover{
+    transform:translateY(-8px);
+}
+
+.horario{
+    display:inline-block; /* Permite que o elemento tenha largura e altura, mas ainda se comporte como um elemento em linha */
+    background:var(--vermelho);
+    color:white;
+    padding:6px 14px;
+    border-radius:30px;
+    margin-bottom:18px;
+    font-weight:bold;
+}
+
+.programa-card h4{
+    margin-bottom:15px;
+}
+
+.dia-programacao{
+    margin-bottom: 15px;
+}
