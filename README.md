@@ -4,6 +4,12 @@ Projeto desenvolvido para a disciplina de Desenvolvimento Web, com o objetivo de
 
 ---
 
+## Página Inicial
+
+![Página Inicial](img/Captura_de_tela_pagina_inicial.png)
+
+---
+
 # Autor
 
 **Lucas Souza Viana**
