@@ -77,6 +77,20 @@ SEMANA_CULTURA_JAPONESA/
 │   ├── banner.png
 │   ├── logo_japones.png
 │   ├── icone_logo_japones.png
+│   ├── banner (1).png
+│   ├── almoco_japones.png
+│   ├── Captura_de_tela_pagina_inicial.png
+│   ├── salao_evento.png
+│   ├── mochi.png
+│   ├── oficina_de_origami.png
+│   ├── oficina_sushi.png
+│   ├── onigiri
+│   ├── paisagem_evento_luxo
+│   ├── pintura_de_vasos
+│   ├── ramen
+│   ├── sushi.jpg
+│   ├── tempura.jpg
+│   ├── yakissoba.jpg
 │   ├── icones/
 │       ├── email.svg
 │       ├── instagram.svg   
