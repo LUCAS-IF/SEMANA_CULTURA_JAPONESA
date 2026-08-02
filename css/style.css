@@ -522,7 +522,7 @@ video{
     transition:.35s;
 }
 
-.card-ingresso button:hover{
+.btn-ingressos:hover{
     background:var(--vermelho-escuro);
 }
 
