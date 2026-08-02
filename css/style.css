@@ -22,6 +22,7 @@ body {
 :root { /* Usado para definir variáveis CSS, para achar e mudar as cores do site facilmente */
     --vermelho: #c62828;
     --vermelho-escuro: #9d1b1b;
+    --marron-escuro: #130707;
     --preto: #222222;
     --cinza: #666666;
     --cinza-claro: #f5f5f5;
@@ -354,6 +355,10 @@ nav a:hover{
     background: #ffffff;
 }
 
+#cardapio h2::before { /* pseudo-elemento */
+    content: "🍣 ";
+}
+
 .cardapio-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
@@ -368,9 +373,13 @@ nav a:hover{
     transition: .35s;
 }
 
-.card-prato:hover{
+.card-prato:hover{ /*pseudo-classe*/
     transform: translateY(-10px);
     box-shadow: 0 18px 40px rgba(0,0,0,.18);
+}
+
+.card-prato:nth-child(even) {/* Seleciona os cards pares do cardápio */
+    background-color: var(--marron-escuro);
 }
 
 .card-prato img{
@@ -712,7 +721,7 @@ textarea{
         height:auto;
         padding:20px 0;
     }
-    
+
     header{
         position:relative;
     }
