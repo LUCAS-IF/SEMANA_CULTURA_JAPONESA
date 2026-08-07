@@ -24,7 +24,7 @@ body {
     --vermelho-escuro: #9d1b1b;
     --marron-escuro: #130707;
     --preto: #222222;
-    --cinza: #666666;
+    --cinza: #333030;
     --cinza-claro: #f5f5f5;
     --branco: #ffffff;
     --dourado: #d4af37;
@@ -269,6 +269,7 @@ nav a:hover{
     max-width:700px;
     margin:auto; /* Centraliza o parágrafo horizontalmente */
     color:var(--cinza);
+    font-size:1.3rem;
 }
 
 
