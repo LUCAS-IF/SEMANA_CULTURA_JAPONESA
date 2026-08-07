@@ -10,7 +10,7 @@
     <meta name="keywords" content="Japão, Cultura Japonesa, Gastronomia, Sushi, Evento, Festival, Cultura Oriental">
     <meta name="author" content="Lucas Souza Viana">
 
-    <title>Contato</title>
+    <title>Formulário de Reserva</title>
 
     <link rel="icon" href="img/icone_logo_japones.png">
 
@@ -49,11 +49,9 @@
                     <li><a href="cardapio.html">Cardápio</a></li>
                     <li><a href="galeria.html">Galeria</a></li>
                     <li><a href="video.html">Vídeo</a></li>
-                    <li><a href="local.html">Local</a></li>
+                    <li><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
-
-            <a href="ingressos.html" class="btn btn-primary">Inscreva-se</a>
 
         </div>
 
@@ -61,60 +59,51 @@
 
     <main>
 
-        <div id="informacoes" class="informacoes secao">
+        <div id="ingressos" class="secao">
 
             <div class="container">
 
                 <div class="titulo-secao">
-                    <h2>Informações</h2>
-                    <p>Entre em contato conosco através das informações abaixo:</p>
-                </div>
 
-                <div class="informacoes-grid">
-
-                    <article class="info-card">
-
-                        <img src="img/icones/telefone.svg"
-                            alt="Ícone de telefone"
-                            class="icone">
-                        <h3>Telefone</h3>
-                        <p>(11) 90985-3954</p>
-
-                    </article>
-
-                    
-                    <article class="info-card">
-                        <a href="http://www.gmail.com" target="_blank" rel="noopener noreferrer">
-                            <img src="img/icones/email.svg"
-                                alt="Ícone de e-mail"
-                                class="icone">
-                            <h3>E-mail</h3>
-                            <p>contato@semanaculturajaponesa.com.br</p>
-                        </a>
-                    </article>
-                    
-                    <article class="info-card">
-                        <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                            <img src="img/icones/instagram.svg"
-                                alt="Ícone do Instagram"
-                                class="icone">
-                            <h3>Instagram</h3>
-                            <p>@semanaculturajaponesa</p>
-                        </a>
-                    </article>
-
-                    <article class="info-card">
-                        <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                            <img src="img/icones/facebook.svg"
-                                alt="Ícone do Facebook"
-                                class="icone">
-                            <h3>Facebook</h3>
-                            <p>Semana da Cultura Japonesa</p>
-                            </a>
-
-                    </article>                                       
+                    <h2>Ingressos</h2>
+                    <p>Garanta sua participação na Semana da Cultura Japonesa.</p>
 
                 </div>
+
+                <form id="formulario" class="formulario">
+
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone">
+
+                    <label for="ingresso">Tipo de ingresso</label>
+
+                    <select id="ingresso" name="ingresso">
+
+                        <option>Entrada Geral</option>
+                        <option>Oficina de Sushi</option>
+                        <option>Experiência Completa</option>
+
+                    </select>
+
+                    <label for="quantidade">Quantidade</label>
+
+                    <input type="number" id="quantidade" min="1" max="10">
+
+                    <label for="mensagem">Observações</label>
+
+                    <textarea id="mensagem" rows="5"></textarea>
+
+                    <a href="index.html">
+                    <button type="submit">Reservar ingresso</button>
+                    </a>
+
+                </form>
 
             </div>
 
