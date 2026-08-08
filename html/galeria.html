@@ -10,9 +10,9 @@
     <meta name="keywords" content="Japão, Cultura Japonesa, Gastronomia, Sushi, Evento, Festival, Cultura Oriental">
     <meta name="author" content="Lucas Souza Viana">
 
-    <title>Vídeo do evento</title>
+    <title>Galeria de Imagens</title>
 
-    <link rel="icon" href="img/icone_logo_japones.png">
+    <link rel="icon" href="../img/icone_logo_japones.png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,8 +21,8 @@
         href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&family=Noto+Sans:wght@300;400;500;700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
 
 </head>
 
@@ -33,7 +33,7 @@
         <div class="container">
 
             <a href="index.html" class="logo">
-                <img src="img/logo_japones.png" alt="Logo da Semana da Cultura Japonesa">
+                <img src="../img/logo_japones.png" alt="Logo da Semana da Cultura Japonesa">
 
                 <div class="logo-texto">
                     <h1>Semana da Cultura Japonesa</h1>
@@ -47,7 +47,7 @@
                     <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="programacao.html">Programação</a></li>
                     <li><a href="cardapio.html">Cardápio</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="video.html">Vídeo</a></li>
                     <li><a href="local.html">Local</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
@@ -61,24 +61,50 @@
 
     <main>
 
-        <div id="video" class="secao">
+        <div id="galeria" class="secao">
 
             <div class="container">
 
                 <div class="titulo-secao">
 
-                    <h2>Vídeo</h2>
-                    <p> Assista a um vídeo sobre a cultura japonesa e inspire-se para participar do evento.</p>
+                    <h2>Galeria</h2>
+                    <p>Confira alguns momentos e atrações da Semana da Cultura Japonesa.</p>
 
                 </div>
 
-                <video controls poster="img/banner.png"> <!-- O atributo controls adiciona controles de reprodução, pausa e volume ao vídeo. O atributo poster define uma imagem que será exibida antes do vídeo ser reproduzido. -->
+                <div class="carrossel">
 
-                    <source src="media/video_convite.mp4" type="video/mp4"> 
+                    <figure>
+                        <img src="../img/salao_evento.png" alt="Prato de sushi">
+                        <figcaption>Feira gastronômica</figcaption>
+                    </figure>
 
-                    Seu navegador não suporta vídeos em HTML5. <!-- Mensagem exibida caso o navegador não suporte a tag <video> -->
-                    
-                </video>
+                    <figure>
+                        <img src="../img/oficina_de_origami.png" alt="Oficina de Origami">
+                        <figcaption>Oficina de Origami</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="../img/pintura_de_vasos.png" alt="Pintura de Vasos">
+                        <figcaption>Oficina de pintura de vasos</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="../img/yakissoba.png" alt="Yakissoba">
+                        <figcaption>Yakissoba</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="../img/paisagem_evento_luxo.png" alt="Paisagem externa do evento">
+                        <figcaption>Área externa do evento</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="../img/almoco_japones.png" alt="Almoço japonês">
+                        <figcaption>Almoço japonês</figcaption>
+                    </figure>
+
+                </div>
 
             </div>
 
